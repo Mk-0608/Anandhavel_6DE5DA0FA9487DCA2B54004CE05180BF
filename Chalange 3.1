@@ -1,0 +1,18 @@
+python
+def linear_search_product(products, target):
+    indices = []
+    for i in range(len(products)):
+        if products[i] == target:
+            indices.append(i)
+    return indices
+
+# Sample program
+products = ["apple", "banana", "apple", "orange", "grape", "apple"]
+target_product = "apple"
+
+result = linear_search_product(products, target_product)
+if result:
+    print(f"The product '{target_product}' was found at indices: {result}")
+else:
+    print(f"The product '{target_product}' was not found.")
+
